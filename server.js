@@ -10,8 +10,11 @@ import orderRoutes from "./routes/orderRoutes.js";
 import wishlistRoutes from "./routes/wishlistRoutes.js";
 import cartRoute from "./routes/cartRoute.js";
 import reviewRoutes from "./routes/reviewRoutes.js";
+import connectDB from './db.js';
 
 const app = express();
+connectDB();
+
 
 // Set ALLOWED_ORIGINS in Worker variables, comma-separated.
 // Example: https://buygen.in,https://www.buygen.in
