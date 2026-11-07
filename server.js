@@ -12,8 +12,8 @@ import cartRoute from "./routes/cartRoute.js";
 import reviewRoutes from "./routes/reviewRoutes.js";
 import connectDB from './db.js';
 
-const app = express();
 connectDB();
+const app = express();
 
 
 // Set ALLOWED_ORIGINS in Worker variables, comma-separated.
